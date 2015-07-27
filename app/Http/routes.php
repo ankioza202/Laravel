@@ -11,6 +11,17 @@
 |
 */
 
+
+Route::get('/','welcomeController@index');
+
+Route::get('about','PagesController@index');
+
+Route::get('contact','contactController@index');
+
+Route::get('articles','ArticlesController@index');
+Route::get('articles/{id}','ArticlesController@show');
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+		*/
